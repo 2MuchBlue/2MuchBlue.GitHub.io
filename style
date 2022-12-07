@@ -1,0 +1,11 @@
+.side_column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.other:after {
+  content: "";
+  display: table;
+  clear: both;
+}
