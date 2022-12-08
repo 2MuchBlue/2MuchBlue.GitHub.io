@@ -1,6 +1,6 @@
 .side_column {
   float: left;
-  width: 33.33%;
+  width: 45%;
 }
 
 /* Clear floats after the columns */
@@ -8,4 +8,12 @@
   content: "";
   display: table;
   clear: both;
+}
+
+@font-face {
+font-family: "NerkoOne-Regular";
+src: url("fonts/NerkoOne-Regular.eot");
+src: url("fonts/NerkoOne-Regular.woff") format("woff"),
+url("fonts/NerkoOne-Regular.otf") format("opentype"),
+url("fonts/NerkoOne-Regular.svg#filename") format("svg");
 }
