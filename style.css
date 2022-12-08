@@ -12,10 +12,10 @@
 
 @font-face {
 font-family: "NerkoOne-Regular";
-src: url("fonts/NerkoOne-Regular.eot");
-src: url("fonts/NerkoOne-Regular.woff") format("woff"),
-url("fonts/NerkoOne-Regular.otf") format("opentype"),
-url("fonts/NerkoOne-Regular.svg#filename") format("svg");
+src: url("https://mariop-me.github.io/fonts/NerkoOne-Regular.eot");
+src: url("https://mariop-me.github.io/fonts/NerkoOne-Regular.woff") format("woff"),
+url("https://mariop-me.github.io/fonts/NerkoOne-Regular.otf") format("opentype"),
+url("https://mariop-me.github.io/fonts/NerkoOne-Regular.svg#filename") format("svg");
 }
 
 body {
