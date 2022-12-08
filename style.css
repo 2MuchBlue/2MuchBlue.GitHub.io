@@ -17,3 +17,7 @@ src: url("fonts/NerkoOne-Regular.woff") format("woff"),
 url("fonts/NerkoOne-Regular.otf") format("opentype"),
 url("fonts/NerkoOne-Regular.svg#filename") format("svg");
 }
+
+body {
+  font-family: "NerkoOne-Regular";
+}
