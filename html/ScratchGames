@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="https://mariop-me.github.io/style.css"><script type="text/javascript" src="https://mariop-me.github.io/js/apple.js"></script></head>
+<body background="https://mariop-me.github.io/Background.jpg">
+	<div class="sideColumn">
+		<h1>Scratch Games Colection!</h1>
+		<h3>
+    This is a colection of my scratch games.
+		</h3>
+	</div>
+	<div class="mainColum">
+		<h2>More Inpresive Games!</h2>
+		These are some of the things that i am proud of. These are all by me and i like them.
+		You can reach me at Random.Artist.Dooder@gmail.com if you like anything you see.
+		<br>
+		<iframe src="https://scratch.mit.edu/projects/784162754/embed" width="500px" height="400px"></iframe>
+		<br>
+		<iframe src="https://scratch.mit.edu/projects/685079407/embed" width="500px" height="400px"></iframe>
+	</div>
+  
+	<style>
+		.sideColumn {
+			float: left;
+			width: 33.33%;
+		}
+
+		/* Clear floats after the columns */
+		.mainColum:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	</style>
+</body>
+</html>
