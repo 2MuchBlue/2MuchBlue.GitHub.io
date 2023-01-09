@@ -1,6 +1,7 @@
 var rand = Math.floor((Math.random() * 3) + 1);
 
 if(rand == 2){
+	alert("Apple")
 	document.body.style.background = pics/Anthro_Coat_Test_Centered.png;
 }
 
