@@ -8,16 +8,43 @@
 		}
 	</style>
 	<script>
+    var color1 = "#000014";
+    var color2 = "#ccefe0";
+    var BGColor = color1;
+    var textColor = color2;
+    var interfaceText = "L"
+    
 		function PlayGame() {
-			window.location = "https://mariop-me.github.io/Branches/Games/MathGameP2"
+			window.location = "https://mariop-me.github.io/Branches/Games/MathGameP2";
 		}
+        
+        function Change(){
+        
+        if(BGColor == color1){
+        BGColor = color2
+        textColor = color1
+        interfaceText = "D"
+        }else{
+        BGColor = color1
+        textColor = color2
+        interfaceText = "L"
+        }
+        
+        document.body.style.backgroundColor = BGColor
+        document.body.style.color = textColor
+        document.getElementById("InterfaceToggleButton").innerHTML = "<h2>[" + interfaceText + "]</h2>"
+        }
+        
 	</script>
-
-	<div style="text-align:center; padding:10%">
+    <div style="text-align:center; padding:10%">
 		<h1>Math Game Of Cool!</h1>
 		<button style="border-radius: 12px; border-color: #fcd430; background-color: #fcf230; border-width: 10px" onclick="PlayGame()">
 			<h3>Start Game!</h3>
 		</button>
-	</div>
+        </div>
+        
+        <div style="text-align: right; padding: 50%">
+        <button id="InterfaceToggleButton" style="background-color: #f0f0f0; border-color: #e0e0e0; border-width: 10px; border-radius: 25%;" onClick="Change()"><h2>[L]</h2></button>
+        </div>
 </body>
 </html>
