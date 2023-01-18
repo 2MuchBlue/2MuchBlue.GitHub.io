@@ -1,0 +1,51 @@
+<!DocType html>
+<html>
+<head><title>Playing Math Game!</title></head>
+<body style="background-color: #000014">
+
+	<div style="text-align:center; padding:10%">
+		<h1 id="ScoreDisplay">Score: 0</h1><br />
+
+		<h1 id="math">Poopy</h1>
+		<input id="input" style="border-color: #d3d3d3; background-color: white; border-width: 10px; border-radius: 12px; font-size: 200%" type="number" placeholder="Equals..." /><br />
+		<button style="border-radius: 12px; border-color: #fcd430; background-color: #fcf230; border-width: 10px" onclick="Submit()">
+			<h3>Submit</h3>
+		</button>
+	</div>
+
+	<style>
+		body {
+			color: white;
+		}
+	</style>
+	<script>
+
+		var a = 0;
+		var b = 0;
+
+		var Score = 1;
+
+		function SetEquation() {
+			a = Math.round(Math.random() * 20);
+			b = Math.round(Math.random() * 20);
+			document.getElementById("math").innerHTML = a + " + " + b;
+			document.getElementById("input").value = "";
+		}
+
+		function Submit() {
+			var PlayersAnswer = document.getElementById("input").value;
+			var Answer = a + b;
+
+			document.getElementById("ScoreDisplay").innerHTML = "Score: " + Score;
+
+			if (PlayersAnswer == Answer) {
+				alert("You Was Be Right! The Answer Was " + Answer);
+				SetEquation();
+				Score += 1;
+			}
+		}
+
+		SetEquation();
+	</script>
+</body>
+</html>
