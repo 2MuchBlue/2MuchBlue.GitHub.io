@@ -40,9 +40,12 @@
 
 			if (PlayersAnswer == Answer) {
 				alert("You Was Be Right! The Answer Was " + Answer);
-				SetEquation();
 				Score += 1;
+			}else{
+				alert("Sorry, You Got It Wrong. The Answer Was " + Answer);
 			}
+
+			SetEquation();
 		}
 
 		SetEquation();
