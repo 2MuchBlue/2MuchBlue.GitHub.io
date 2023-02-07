@@ -20,5 +20,7 @@ url("https://mariop-me.github.io/fonts/NerkoOne-Regular.svg#filename") format("s
 
 body {
   font-family: "NerkoOne-Regular";
-background-color: #3581f2;
+  background-color: #3581f2;
+  background-image: url("https://mariop-me.github.io/pics/Background2.png");
+  background-size: cover;
 }
