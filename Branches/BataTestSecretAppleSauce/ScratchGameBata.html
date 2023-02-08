@@ -21,6 +21,10 @@
 		}
 	</style>
 
+<div id="R">
+	a
+</div>
+
 	<table>
 		<tr>
 			<td width="25%" style="min-width: 250px; vertical-align:top">
@@ -87,6 +91,8 @@
 
 	<script>
 		var r = Math.round(Math.random());
+
+		document.getElementById("R").innerHTML = r;
 
 		if (r == 1) {
 			document.body.style.backgroundImage = "url('https://mariop-me.github.io/pics/Background2.png')"
