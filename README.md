@@ -19,7 +19,7 @@ The Sites I mentioned are going to be listed from oldest to newest the best I ca
 <a href="https://thetearoom.moomoop1.repl.co/"><strong><em>||The Tea Room||</em></strong></a> This is my most recent and complete home page! I have been making and editing this for a while, and it has been going well!
 
 # Links
-• <a href=" https://scratch.mit.edu/users/bananapuding1232/">Scratch</a><br>
+• <a href="https://scratch.mit.edu/users/bananapuding1232/">Scratch</a><br>
 • <a href="https://www.pixilart.com/tea-master">Pixel Art Gallery</a><br>
 • <a href="https://github.com/MarioP-Me">Github Profile</a><br>
 • <a href="https://replit.com/@MooMoop1">Replit Account</a><br>
