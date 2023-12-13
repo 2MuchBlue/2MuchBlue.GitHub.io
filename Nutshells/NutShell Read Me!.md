@@ -4,7 +4,7 @@ This is a recreation of [Nicky Case's](https://ncase.me) [Nut Shells.](https://n
 
 ## To Use
 To use, simply paste this tag:
-```<script src="https://2MuchSky/Nutshells/NutShellScript.js"></script>``` 
+```<script src="https://2muchsky.github.io/Nutshells/NutShellScript.js"></script>``` 
 in your html, then you can make a `<nut-shell>` tag. Be sure to put `onclick='openNut(this)'` In this tag, make what ever you want the main text to be BUT *!!Make Sure There Are No Child Tags Other Than A `<nut-in></nut-in>`!!* The `<nut-in></nut-in>` tag is what will hold the hidden content you have to click to see. You can put what you please in here.
 
 ## Examples

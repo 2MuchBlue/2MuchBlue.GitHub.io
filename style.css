@@ -12,15 +12,15 @@
 
 @font-face {
 font-family: "NerkoOne-Regular";
-src: url("https://2MuchSky/fonts/NerkoOne-Regular.eot");
-src: url("https://2MuchSky/fonts/NerkoOne-Regular.woff") format("woff"),
-url("https://2MuchSky/fonts/NerkoOne-Regular.otf") format("opentype"),
-url("https://2MuchSky/fonts/NerkoOne-Regular.svg#filename") format("svg");
+src: url("https://2muchsky.github.io/fonts/NerkoOne-Regular.eot");
+src: url("https://2muchsky.github.io/fonts/NerkoOne-Regular.woff") format("woff"),
+url("https://2muchsky.github.io/fonts/NerkoOne-Regular.otf") format("opentype"),
+url("https://2muchsky.github.io/fonts/NerkoOne-Regular.svg#filename") format("svg");
 }
 
 body {
   font-family: "NerkoOne-Regular";
   background-color: #3581f2;
-  background-image: url("https://2MuchSky/pics/Background2.png");
+  background-image: url("https://2muchsky.github.io/pics/Background2.png");
   background-size: cover;
 }
