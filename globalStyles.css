@@ -1,0 +1,238 @@
+
+:root[data-theme="light"]{
+    --text: #0f0f0f;
+    --background: #ffffff;
+    --primary: #155831;
+    --secondary: #d7e4dc;
+    --accent: #c20002;
+}
+
+:root[data-theme="dark"]{
+    --text: #ffffff;
+    --background: #09032e;
+    --darkBackground: #07031e;
+    --primary: #e2371d;
+    --darkPrimary: #fd3e3e;
+    --secondary: #fd7d2d;
+    --accent: #621c1c;
+
+    /*--commisonStatus: #0b9f4d;*/
+    --commisonStatus: #fd3e3e;
+}
+
+body{
+    margin-top: 75px;
+}
+
+.topBar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+
+    align-items: center;
+
+    height: 75px;
+
+    background-color: var(--background);
+
+    overflow-x: auto;
+}
+
+.topBar .selectedItem{
+    background-color: var(--accent);
+    color: var(--text);
+
+    height: 50px;
+
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    width: min-content;
+
+    cursor: pointer;
+}
+
+.topBar .item{
+    /*background-color: var(--accent);*/
+    color: var(--text);
+
+    height: 50px;
+
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    width: min-content;
+
+    cursor: pointer;
+
+    text-decoration: var(--accent) wavy underline;
+}
+
+.topBar .seperator{
+    color: var(--text);
+
+    height: 50px;
+    width: 100%;
+
+    text-align: center;
+
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.brandName{
+    /*position: fixed;*/
+    /*top: 0px;
+    left: 0px;*/
+    color: var(--text);
+
+    text-decoration: none;
+}
+
+.verticalList{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.listItem{
+    padding: 10px;
+    margin: 5px;
+    /*background-color: var(--secondary);*/
+    color: var(--text);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primaryButton{
+    font-size: 32px;
+    padding: 10px;
+    margin: 5px;
+    background: linear-gradient(50deg, var(--primary), var(--secondary));
+    border-width: 10px;
+    
+    color: var(--text);
+    width: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+/*
+.primaryButton:hover{
+    animation-name: primaryButtonHover;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@keyframes primaryButtonHover {
+    0% {background: linear-gradient(50deg, var(--primary), var(--secondary));}
+    50% {background: linear-gradient(50deg, var(--primary), var(--secondary));}
+    100% {background: linear-gradient(50deg, var(--primary), var(--secondary));}
+}
+*/
+
+.secondaryButton{
+    padding: 10px;
+    margin: 5px;
+    /*background-color: var(--accent);*/
+    /*border: var(--primary) solid 10px;*/
+    color: var(--secondary);
+    width: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.masterHeader{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.imgRow{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgRow > img{
+    border-radius: 10px;
+    margin: 10px;
+    height: 400px;
+
+    max-width: calc(100vw - 20px);
+
+    flex: 1;
+
+    object-fit:cover;
+
+    text-align: center;
+}
+
+a{
+    text-decoration: var(--darkPrimary) double underline;
+}
+
+.linkArea{
+    width: 100%;
+    background-color: #0f0f0f;
+
+    color: var(--text);
+    /*
+    color: var(--accent);
+
+    display: flex;
+
+    flex-wrap: nowrap;
+    flex-direction: column;
+    */
+    height: 500px;
+
+    
+}
+
+.linkArea a{
+    /*background-color: var(--accent);*/
+    color: var(--darkPrimary);
+
+    padding: 10px;
+
+    margin: 12px;
+
+    border-radius: 5px;
+}

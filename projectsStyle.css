@@ -1,0 +1,50 @@
+
+body {
+    font-family: alata;
+  
+    background-color: var(--background);
+    color: var(--text);
+  
+    font-size: 30px;
+  
+    margin: 0px;
+    padding: 0px;
+}
+
+.project{
+    background-color: var(--darkBackground);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+
+    border-radius: 5px;
+}
+
+.project .on-going{
+    color: #ffe053;
+}
+
+.project .finished{
+    color: #5be930;
+}
+
+.project .discontinued{
+    color: #fd3e3e;
+}
+
+a{
+    color: var(--darkPrimary);
+}
+
+.projectThumbnail{
+    object-fit: cover;
+    width: 100%;
+
+    max-width: 400px;
+
+    border-radius: 5px;
+}

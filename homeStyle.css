@@ -1,0 +1,42 @@
+
+
+body {
+    font-family: alata;
+  
+    background-color: var(--background);
+    color: var(--text);
+  
+    font-size: 30px;
+  
+    margin: 0px;
+    padding: 0px;
+}
+
+.titleHeaderBox{
+    margin-left: 10vw;
+    height: 25vh;
+    width: fit-content;
+    min-height: 300px;
+    /*background-color: var(--accent);*/
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: start;
+
+}
+
+.vidioInput{
+    width: 50px;
+    height: 50px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    justify-content: start;
+    flex-wrap: nowrap;
+}

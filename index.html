@@ -1,28 +1,94 @@
 <!DOCTYPE html>
-<html>
-<!-- Getting Referance To The css File -->
+<html lang="en" data-theme="dark">
 <head>
-	<link rel="stylesheet" type="text/css" href="https://2muchsky.github.io/style.css"><script type="text/javascript" src="https://2muchsky.github.io/js/apple.js"></script>
-</head>
-<!--Main Page-->
-<title> Mario P's Dashboard </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2MuchSky</title>
 
+    <link href="homeStyle.css" rel="stylesheet" type="text/css" />
+    <link href="globalStyles.css" rel="stylesheet" type="text/css" />
+
+    <!-- fonts from google (font name is "Alata" you can find this at "https://fonts.google.com/specimen/Alata") -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+</head>
 <body>
 
-	<h1> Mario P's Home Page. </h1>
-	<h2>This is the place to find most of what ever i'm working on at the time. 
-	You are welcome and encouaged to look around. I hope you find something interesting. 
-	if you have any questions email me at Random.Artist.Dooder@gmail.com.<br>
-	<br>
-	-------------------<br>
-	<a href="https://2muchsky.github.io/Branches/ScratchGames">Scratch Games</a><br>
-	-------------------<br>
-	<a href="https://2muchsky.github.io/Branches/Games/MathGameP1">Math html Game</a><br>
-	-------------------<br>
-	<a href="https://2muchsky.github.io/Branches/ArtHub">Art Page</a><br>
-	-------------------<br>
-	<a href="https://2muchsky.github.io/Branches/AboutMe">About Me</a><br>
-	-------------------<br>
-</h2>
+    <div class="topBar">
+        <div class="brandName selectedItem">2MuchSky</div>
+        <div class="selectedItem">Home</div>
+        <a href="projects.html" class="item">Projects</a>
+        <div class="seperator"> || </div>
+        <a href="#Links" class="item">links</a>
+    </div>
+
+    <!--
+    <div class="flexRow">
+        <a class="primaryButton" target="_scratch" href="https://scratch.mit.edu/users/bananapuding1232/">Scratch Page</a>
+        <a class="primaryButton" target="_pixArt" href="https://www.pixilart.com/tea-master">Pixel Art Gallery</a>
+        <a class="primaryButton" target="_gitProf" href="https://github.com/2MuchSky">Github Profile</a>
+        <a class="primaryButton" target="_spacHey" href="https://https://spacehey.com/skybrewer">Space Hey</a>
+    </div>
+    -->
+    
+    <div class="titleHeaderBox">
+        <span class="masterHeader">2MuchSky</span>
+        <h3>The Home Of My... <em>Unique</em> Art</h3>
+        <div class="flexRow">
+            <a href="mailto:random.artist.dooder@gmail.com" class="primaryButton listItem">Get In Touch!</a>
+        </div>
+    </div>
+
+    <div class="imgRow">
+        <img src="https://2MuchSky.github.io/pics/a_Nice_Room.png" alt="A dark children's room with a striped rug and book case.">
+        <img src="https://2MuchSky.github.io/pics/Sky_Fire.png" alt="A sky kid holding a flame.">
+        <img src="https://2MuchSky.github.io/pics/WonderfulCuriosity.png" alt="A girl in a red dress peering at something with great curiosity.">
+    </div>
+
+    <h2 style="padding-left: 40px;">About Me</h2>
+    <p style="padding-left: 20px;">
+        Hello! I'm Sky, the maker of this site; a confusing trans, non-binary, ace, artist(?) on the internet no one can figure out :D
+    </p>
+
+    <div class="imgRow">
+        <img src="https://2MuchSky.github.io/pics/ForgottenRuins.jpg" alt="Floating ruins in the clouds lost to time.">
+        <img src="https://2MuchSky.github.io/pics/BoxFloorFling.gif" alt="A box falling in ant out of two portals">
+        
+    </div>  
+    
+    <h2 style="padding-left: 40px;">The Purpose</h2>
+    <p style="padding-left: 20px;">
+        This is my personal place I put all the random stuff I'm working on or have worked on. 
+        Most of it is rubbish but its <em>my</em> rubbish.
+        While all of these... works are all a tad strange, they are all bits and peices of what I've done. Some made deep in the night, others while watching a show, but all of them by me at one point or another...
+        look, I didn't say they where good :P <br>
+        
+        You can find links to my various things <a href="#Links" style="color: var(--darkPrimary);">here</a> or at the bottom of this page.
+    </p>
+
+    <div class="imgRow">
+        <img src="https://2MuchSky.github.io/pics/SatisfyingSlice.gif" alt="A blue cube being extuded and cut.">
+        <img src="https://2MuchSky.github.io/pics/StandingLady.gif" alt="A fox lady standing in a yellow jumper with a nice wide brimed hat.">
+        <img src="https://2MuchSky.github.io/pics/Kris.jpg" alt="omg kris undertale!? Also, they're ridiculously tall.">
+    </div>
+
+    <h2 style="padding-left: 40px;">Thank You</h2>
+    <p style="padding-left: 20px;">
+        Thank you for reading this far! I made this site to try to get my art out there. <br>
+        If you liked what you saw,<a href="mailto:random.artist.dooder@gmail.com" class="secondaryButton">Get In Touch!</a> Commission are <span style="color: var(--darkPrimary);">not </span> open, sorry.<!--, I don't know when they might be but I don't feel I have enough examples of my stuff nor that I am anywhere near close to anything worth anything let alone money.-->
+    </p>
+
+    <div class="linkArea">
+        <div>
+            <h2 style="padding-left: 20px;" id="Links">Social Links</h2>
+            <div class="list">
+                <a class="" target="_scratch" href="https://scratch.mit.edu/users/bananapuding1232/">Scratch Page</a><br>
+                <a class="" target="_pixlArt" href="https://www.pixilart.com/tea-master">Pixel Art Gallery</a><br>
+                <a class="" target="_gitProf" href="https://github.com/2MuchSky">Github Profile</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
