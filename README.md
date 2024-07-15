@@ -10,4 +10,5 @@ Hello everyone! Im the idiot running this show and so far, I've managed to keep 
 <li><a href="https://scratch.mit.edu/users/bananapuding1232/">Scratch</a></li>
 <li><a href="https://www.pixilart.com/tea-master">Pixel Art Gallery</a></li>
 <li><a href="https://github.com/MarioP-Me">Github Profile</a></li>
+<li><a href="https://https://2muchblue.itch.io/">Itch.io Profile</a></li>
 </ul>
