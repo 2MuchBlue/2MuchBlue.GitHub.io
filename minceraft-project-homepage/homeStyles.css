@@ -1,0 +1,95 @@
+/*.galleryHolder{
+    display: grid;
+    grid-template-areas: 
+    "niceRoom niceRoom niceRoom jumpBox jumpBox"
+    "niceRoom niceRoom niceRoom jumpBox jumpBox"
+    "curiosity curiosity lady skyFire skyFire"
+    "curiosity curiosity lady skyFire skyFire"
+    "ramble ramble ramble ramble ramble"
+    "ramble ramble ramble ramble ramble"
+    "rose slice slice slice slice"
+    "boxFall slice slice slice slice"
+    "ruins ruins ruins ruins ruins"
+    "ruins ruins ruins ruins ruins"
+    ;
+
+    grid-template-rows: repeat(4, minmax(0, 1fr)) fit-content fit-content repeat(4, minmax(0, 1fr)); 
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}*/
+
+.sideBar{
+    backdrop-filter: hue-rotate(30deg);
+}
+
+a{
+    color: #19b726;
+}
+
+body{
+    background-image: url("../pics/dirt.png");
+    background-size: 10%;
+}
+
+.textButton{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.galleryHolder img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+
+    max-height: 400px;
+}
+
+img{
+    color: aqua;
+    /*border: #19b726 10px solid;*/
+}
+
+.skinContainer {
+    height: 65vh; 
+    max-width: 1.5in;
+    width: auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+
+    text-align: center;
+}
+
+.skinContainer .mainImg{
+    margin: 0px; 
+    /*max-width: 1.5in; */
+    width:auto; 
+    height: 100%;
+}
+
+.skinContainer .skinTexture {
+    width:auto; 
+    height: 50%;
+}
+
+.resourcePackCard{
+    max-width: 3in;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.resourcePackCard img {
+    width: 100%;
+    grid-area: img;
+}
+
+.resourcePackCard {
+    text-align: center;
+}
+
+.resourcePackCard div{
+    grid-area: blurb;
+    max-height: 75vh;
+    overflow-y: scroll;
+}

@@ -1,0 +1,28 @@
+
+.intrests {
+    display: grid;
+    grid-template-areas: 
+    " interests interests "
+    " hobbies games "
+    " hobbies games "
+    " gline games "
+    " shows games  "
+    " hline hline "
+    " animation animation "
+    " aline aline"
+    "books sites"
+    "bline sites"
+    "movies sites";
+
+    grid-template-rows: repeat(11,100%);
+    grid-template-columns: 1fr 1fr;
+}
+
+.animationListHolder{
+    display: grid;
+    grid-template-areas: 
+    " left right ";
+
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+}

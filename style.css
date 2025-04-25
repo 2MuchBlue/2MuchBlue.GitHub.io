@@ -1,0 +1,244 @@
+
+:root{
+    --text : #ffcc14;
+    --primary : #34145c64;
+}
+
+@font-face {
+    font-family: monogram;
+    src: url("https://mangoshool.github.io/Design/monogram%20demo/monogram-extended.ttf");
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+body{
+    margin: 0px;
+    min-height: 100vh;
+    font-family: monogram, "Courier New";
+    font-size: 2rem;
+    display: grid;
+    
+    background-image: url("https://2MuchBlue.github.io/pics/a_Nice_Room.png");
+    background-size: cover;
+    background-color: #3b1361;
+
+    height: 100vh;
+
+    image-rendering: pixelated;
+}
+
+.vr{
+    border: var(--text) solid 1px;
+    height: 100%;
+    width: 0px;
+}
+
+.sideBar{
+    grid-area: side;
+    background-image: url('pics/icons/epicBackground-01.png');
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+
+    border: none;
+}
+
+.sideBarFrame{
+    grid-area: side;
+    border: none;
+
+    height: 100%;
+}
+
+@media (min-width : 10in) { /* If larger than 10 in... */
+    body{
+        grid-template-areas:
+        "side headLeftEdge head head head head head headRightEdge"
+        "side . . main main main . ."
+        "side . . main main main . ."
+        "side . . main main main . ."
+        "side footLeftEdge foot foot foot foot foot footRightEdge";
+        
+        grid-template-rows: 50px 1fr 1fr 1fr 50px;
+        grid-template-columns: 150px 50px 50px repeat(3, 1fr) 50px 50px;
+    }
+}
+
+@media (max-width : 10in){ /* If less than 10ins... */
+    body{
+        grid-template-areas:
+        "side side side side side"
+        "head head head head head"
+        ". main main main ."
+        ". main main main ."
+        ". main main main ."
+        "foot foot foot foot foot";
+        
+        grid-template-rows: min-content 50px 1fr 1fr 1fr 50px;
+        grid-template-columns: 50px repeat(3, 1fr) 50px;
+    }
+
+    .sideBar{
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    .hideIf2small{
+        display: none;
+    }
+
+    .sideBar .epicButton img{
+        display: none;
+    }
+}
+
+.footBar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+    grid-area: foot;
+    background-color: aquamarine;
+}
+    
+img{
+    image-rendering: pixelated;
+}
+
+.epicButton{
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    transition-property: transform;
+    transform: rotation(0deg) scale(1);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.epicButton:hover{
+    /*animation-name: spinny;
+    animation-timing-function: cubic-bezier(.68,-0.55,.27,1.55) ;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;*/
+    transform: rotate(360deg) scale(1.2);
+}
+
+@keyframes spinny {
+    0% {
+        transform: rotate(0deg);
+        scale: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 1.2;
+    }
+}
+
+@keyframes showLetters {
+    from {
+        font-size: normal;
+    }
+
+    to {
+        font-size:xx-large;
+    }
+}
+
+hr{
+    color: var(--text);
+}
+
+.imageGallery{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    padding-bottom: 10px;
+
+    border-radius: 20px;
+}
+
+.denotedNestedDiv{
+    margin-left: 20px; 
+    border-left: 2px solid var(--text); 
+    padding-left: 5px;
+
+    /*border-radius: 20px;*/
+
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.denotedNestedDiv:not([long]) *{ /* if a denotedNestedDiv class has no [long] attrabute, the children will have to margin */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.denotedNestedDiv:not([long]):has(*){
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.imageGallery.small {
+    max-height: 20vh;
+}
+.imageGallery.small img  {
+    width: 100%;
+    max-height: 20vh;
+    object-fit:cover;
+    /*border-radius: 10px;*/
+}
+
+.imageGallery.large {
+    max-height: 50vh;
+}
+.imageGallery.large img  {
+    width: 100%;
+    max-height: 50vh;
+    object-fit:cover;
+    /*border-radius: 10px;*/
+}
+
+* {
+    scrollbar-color: var(--text) var(--primary);
+}
+
+.galleyTable{
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.galleyTable th {
+    border-right: solid 2px var(--text);
+}
+
+.galleyTable th:nth-last-child(1){
+    border-right: none;
+}
+
+
+a{
+    color: #19b726;
+}

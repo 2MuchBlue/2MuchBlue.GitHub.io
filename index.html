@@ -1,95 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2MuchBlue</title>
+    <title>2MuchBlue's Epic JS Projects</title>
 
-    <link href="homeStyle.css" rel="stylesheet" type="text/css" />
-    <link href="globalStyles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="localStyle.css">
 
-    <!-- fonts from google (font name is "Alata" you can find this at "https://fonts.google.com/specimen/Alata") -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="pics/icons/epicHomeButton.gif">
 </head>
 <body>
-
-    <div class="topBar">
-        <div class="brandName selectedItem">2MuchBlue</div>
-        <div class="selectedItem">Home</div>
-        <a href="projects.html" class="item">Projects</a>
-        <div class="seperator"> || </div>
-        <a href="#Links" class="item">links</a>
-    </div>
-
-    <!--
-    <div class="flexRow">
-        <a class="primaryButton" target="_scratch" href="https://scratch.mit.edu/users/bananapuding1232/">Scratch Page</a>
-        <a class="primaryButton" target="_pixArt" href="https://www.pixilart.com/tea-master">Pixel Art Gallery</a>
-        <a class="primaryButton" target="_gitProf" href="https://github.com/2MuchSky">Github Profile</a>
-        <a class="primaryButton" target="_spacHey" href="https://https://spacehey.com/skybrewer">Space Hey</a>
-    </div>
-    -->
     
-    <div class="titleHeaderBox">
-        <span class="masterHeader">2MuchBlue</span>
-        <h3>The Home Of My... <em>Unique</em> Art</h3>
-        <div class="flexRow">
-            <a href="mailto:random.artist.dooder@gmail.com" class="primaryButton listItem">Get In Touch!</a>
-        </div>
+    <div class="sideBar">
+        <div style="color: var(--text); text-align: center; margin-top: 10px; padding: 10px;">Nav&#x2011;o&#x2011;matic</div>
+        <a href="https://2muchblue.github.io/" class="epicButton"><img src="pics/icons/epicHomeButton.gif" width="150px" height="150px"><span>Home</span></a>
+        <a href="mailto:random.artist.dooder@gmail.com" class="epicButton" ><img src="pics/icons/epicMailButton.gif" width="150px" height="150px"><span>Get In Touch!!</span></a>
+        <a href="about-page/about.html" class="epicButton"><img src="pics/icons/epicLinkButton.gif" width="150px" height="150px"><span>About Me!</span></a>
+        <a href="project-master/projects-main.html" class="epicButton"><img src="pics/icons/epicProjectsButton.gif" width="150px" height="150px"><span>Projects</span></a>
+        <a href="photoGallery/photoGallery.html" class="epicButton"><img src="pics/icons/epicFlower.gif" width="150px" height="150px"><span>Photo Gallery</span></a>
+        <hr style="width: 75%;" class="hideIf2small">
+        <div style="margin-top: 30vh;" class="hideIf2small"></div>
     </div>
 
-    <div class="imgRow">
-        <img src="https://2MuchBlue.github.io/pics/a_Nice_Room.png" alt="A dark children's room with a striped rug and book case.">
-        <img src="https://2MuchBlue.github.io/pics/Sky_Fire.png" alt="A sky kid holding a flame.">
-        <img src="https://2MuchBlue.github.io/pics/WonderfulCuriosity.png" alt="A girl in a red dress peering at something with great curiosity.">
-    </div>
+    <div style="background-color: aquamarine; grid-area: head;"><!--Nothin here yet. This is the top bar--></div>
+    <div style="grid-area: main; overflow-y: scroll; background-image: url('pics/icons/epicBackground-01.png'); padding: 20px; color: var(--text);">
+        <h1>Welcome!!!!</h1>
+        <p>
+            Hello! I'm Blue, the maker of this site! A she/they little Aromantic/Asexual entity that has a few to many hobbies, and unrestricted internet access.
+            <a target="_mail" href="mailto:random.artist.dooder@gmail.com">You can always reach me at Random.Artist.Dooder@gmail.com!</a>
+        </p>
 
-    <h2 style="padding-left: 40px;">About Me</h2>
-    <p style="padding-left: 20px;">
-        Hello! I'm Blue, the maker of this site! A confusing trans, non-binary, ace of spades, and/or artist on the internet no one, including myself, can figure out.
-    </p>
+        <hr>
 
-    <div class="imgRow">
-        <img src="https://2MuchBlue.github.io/pics/ForgottenRuins.jpg" alt="Floating ruins in the clouds lost to time.">
-        <img src="https://2MuchBlue.github.io/pics/BoxFloorFling.gif" alt="A box falling in ant out of two portals">
-        
-    </div>  
-    
-    <h2 style="padding-left: 40px;">The Purpose</h2>
-    <p style="padding-left: 20px;">
-        This is my personal place I put all the random stuff I'm working on or have worked on. 
-        Most of it is rubbish but its <em>my</em> rubbish.
-        While all of these... works are all a tad strange, they are all bits and peices of what I've done. Some made deep in the night, others while watching a show, but all of them are by me at one point or another...
-        look, I didn't say they where good :P <br>
-        
-        You can find links to my various things <a href="#Links" style="color: var(--darkPrimary);">here</a> or at the bottom of this page.
-    </p>
+        <div class="siteMapGrid">
+            <div style="grid-area: why;">
+                <h2>Why I'm Here :P</h2>
+                <div class="denotedNestedDiv">
+                    <p>
+                        This is my personal place I put all the random stuff I'm working or have worked on. Most of it is
+                        rubbish but its <em>my</em> rubbish. While all of these... works are all a tad strange, they are all bits and
+                        peices of me. Some made deep in the night, others while I was to be doing something else, but all of them are
+                        by me at one point or another :P
+                    </p>
+                    <p><a href="about-page/about.html">Read More Over Here!&nbsp;-></a></p>
+                </div>
+            </div>
 
-    <div class="imgRow">
-        <img src="https://2MuchBlue.github.io/pics/SatisfyingSlice.gif" alt="A blue cube being extuded and cut.">
-        <img src="https://2MuchBlue.github.io/pics/StandingLady.gif" alt="A fox lady standing in a yellow jumper with a nice wide brimed hat.">
-        <img src="https://2MuchBlue.github.io/pics/Kris.jpg" alt="omg kris undertale!? Also, they're ridiculously tall.">
-    </div>
-
-    <h2 style="padding-left: 40px;">Thank You</h2>
-    <p style="padding-left: 20px;">
-        Thank you for reading this far! I made this site to try to get my art out there; a portfolio of sorts. I also have made games and experiances that you can find on the <a href="projects.html">Projects</a> page.<br>
-        If you liked what you saw,<a href="mailto:random.artist.dooder@gmail.com" class="secondaryButton">Get In Touch!</a> Commission are <span style="color: var(--darkPrimary);">not </span> open, sorry.<!--, I don't know when they might be but I don't feel I have enough examples of my stuff nor that I am anywhere near close to anything worth anything let alone money.-->
-    </p>
-
-    <div class="linkArea">
-        <div>
-            <h2 style="padding-left: 20px;" id="Links">Social Links</h2>
-            <div class="list">
-                <a class="" target="_scratch" href="https://scratch.mit.edu/users/bananapuding1232/">Scratch Page</a><br>
-                <a class="" target="_pixlArt" href="https://www.pixilart.com/tea-master">Pixel Art Gallery</a><br>
-                <a class="" target="_gitProf" href="https://github.com/2MuchBlue">Github Profile</a>
-                <a class="" target="_itchPro" href="https://https://2muchblue.itch.io/">Itch.io Profile</a>
+            <div style="grid-area: links;">
+                <h3>In Nebula Links</h3>
+                <div class="denotedNestedDiv">
+                    <ul>
+                        <li><a href="project-master/projects-main.html" >All Projects</a></li>
+                        <li><a href="minceraft-project-homepage/projects-minecraft.html" >Minecraft Stuff</a></li>
+                        <li><a href="JS-Projects-homepage/projects-games.html" >My Games</a></li>
+                        <li><a href="about-page/about.html" >About Me!</a></li>
+                        <li><a href="photoGallery/photoGallery.html" >Photo Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <h3>In Distant Space</h3>
+                <div class="denotedNestedDiv">
+                    <ul>
+                        <li><a class="" target="_scratch" href="https://scratch.mit.edu/users/bananapuding1232/">Scratch Page</a></li>
+                        <li><a class="" target="_pixlArt" href="https://www.pixilart.com/2muchblue/gallery">Pixel Art Gallery</a></li>
+                        <li><a class="" target="_gitProf" href="https://github.com/2MuchBlue">Github Profile</a></li>
+                        <li><a class="" target="_itchPro" href="https://2muchblue.itch.io/">Itch.io Profile</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </div>
+    <div style="background-color: aquamarine; grid-area: foot;"><!--Nothin here yet. This is the bottom bar--></div>
 </body>
 </html>
