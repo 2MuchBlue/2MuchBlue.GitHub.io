@@ -28,6 +28,7 @@ a{
 body{
     background-image: url("../pics/dirt.png");
     background-size: 10%;
+    image-rendering: pixelated;
 }
 
 .textButton{
@@ -62,14 +63,14 @@ img{
 
 .skinContainer .mainImg{
     margin: 0px; 
-    /*max-width: 1.5in; */
-    width:auto; 
-    height: 100%;
+    /*width: 50%; */
+    height:50%;
+    /*max-width: 1.5in;*/
 }
 
 .skinContainer .skinTexture {
     width:auto; 
-    height: 50%;
+    height: 25%;
 }
 
 .resourcePackCard{
