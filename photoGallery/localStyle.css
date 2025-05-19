@@ -10,7 +10,7 @@
     "ruins      ruins     ruins    ruins   ruins  "
     ;
 
-    grid-template-rows: repeat(8, 100%); 
+    /*grid-template-rows: repeat(8, min-content); */
     grid-template-columns: repeat(5, 1fr);
 }
 
@@ -50,6 +50,6 @@ img{
     "mine  mine  game game  button"
     "git   mebutton  mebutton mebutton button";
 
-    grid-template-rows: 20vh 35vh 100% 100%;
+    grid-template-rows: 20vh 35vh min-content min-content;
     grid-template-columns: 1fr 1.4fr 0.6fr 1fr 0.6fr;
 }
