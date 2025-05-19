@@ -12,9 +12,11 @@
     " aline aline"
     "books sites"
     "bline sites"
-    "movies sites";
+    "movies sites"
+    "mline mline"
+    "music music";
 
-    grid-template-rows: repeat(11,100%);
+    grid-template-rows: repeat(13, min-content);
     grid-template-columns: 1fr 1fr;
 }
 
