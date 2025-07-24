@@ -74,15 +74,15 @@ body{
 @media (max-width : 10in){ /* If less than 10ins... */
     body{
         grid-template-areas:
-        "side side side side side"
-        "head head head head head"
-        ". main main main ."
-        ". main main main ."
-        ". main main main ."
-        "foot foot foot foot foot";
+        "side"
+        "head"
+        "main"
+        "main"
+        "main"
+        "foot";
         
-        grid-template-rows: min-content 50px 1fr 1fr 1fr 50px;
-        grid-template-columns: 50px repeat(3, 1fr) 50px;
+        grid-template-rows: 75px 50px 1fr 1fr 1fr 50px;
+        grid-template-columns: 1fr;
     }
 
     .sideBar{
@@ -100,6 +100,10 @@ body{
 
     .sideBar .epicButton img{
         display: none;
+    }
+
+    .sideBar .epicButton {
+        scale: 0.5;
     }
 }
 
