@@ -7,7 +7,8 @@
     "boxFall    slice     slice    slice   slice  "
     "sunset     sunset    sunset   flrceil chem   "
     "sunset     sunset    sunset   spaceB  wallHit"
-    "ruins      ruins     ruins    ruins   ruins  "
+    "illy       zFox      zFox     flower  flower "
+    "foxTrot    foxTrot   ruins    ruins   ruins  "
     ;
 
     /*grid-template-rows: repeat(8, min-content); */
@@ -15,7 +16,7 @@
 }
 
 .sideBar{
-    backdrop-filter: hue-rotate(30deg);
+    /*filter: hue-rotate(30deg);*/
 }
 
 a{

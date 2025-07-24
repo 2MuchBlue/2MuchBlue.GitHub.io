@@ -11,7 +11,7 @@
     <link rel="icon" href="../pics/icons/epicFlower.gif">
 </head>
 <body>
-    <div class="sideBar">
+    <nav class="sideBar">
         <div style="color: var(--text); text-align: center; margin-top: 10px; padding: 10px;">Nav&#x2011;o&#x2011;matic</div>
         <a href="https://2muchblue.github.io/" class="epicButton"><img src="../pics/icons/epicHomeButton.gif" width="150px" height="150px"><span>Home</span></a>
         <a href="mailto:random.artist.dooder@gmail.com" class="epicButton" ><img src="../pics/icons/epicMailButton.gif" width="150px" height="150px"><span>Get In Touch!!</span></a>
@@ -20,7 +20,7 @@
         <a href="../photoGallery/photoGallery.html" class="epicButton"><img src="../pics/icons/epicFlower.gif" width="150px" height="150px"><span>Photo Gallery</span></a>
         <hr style="width: 75%;" class="hideIf2small">
         <div style="margin-top: 30vh;" class="hideIf2small"></div>
-    </div>
+    </nav>
 
     <div style="background-color: aquamarine; grid-area: head;"><!--Nothin here yet. This is the top bar--> <a style="padding-left: 10px; padding: 5px;" href="../index.html"> &lt; Back Home</a> </div>
     <div style="grid-area: main; overflow-y: scroll; background-image: url('../pics/icons/epicBackground-01.png'); padding: 20px; color: var(--text);">
@@ -30,28 +30,74 @@
         </p>
 
         <div class="galleryHolder">
-            <img alt="A dimmly lit room with a blue and red carpet, small bed, bookcase, and lamp."
-                style="grid-area: niceRoom;" src="https://2muchblue.github.io/pics/a_Nice_Room.png">
-            <img alt="A moth from Sky: Children of the light holding a flame." style="grid-area: skyFire;"
-                src="https://2muchblue.github.io/pics/Sky_Fire.png">
-            <img alt="A girl in a red dress looking off with curiosity." style="grid-area: curiosity;"
-                src="https://2muchblue.github.io/pics/WonderfulCuriosity.png">
-            <img alt="An anthropromorphic woman with a nice fluffy hat and cartigan." style="grid-area: lady;"
-                src="https://2muchblue.github.io/pics/StandingLady.gif">
-            <img alt="A Apreture Science Weighted Storage Cube falling into and out of an orange and blue portal."
-                style="grid-area: jumpBox;" src="https://2muchblue.github.io/pics/BoxFloorFling.gif">
-            <img alt="A floating island with ruins from a time long past." style="grid-area: ruins;"
-                src="https://2muchblue.github.io/pics/ForgottenRuins.jpg">
-            <img style="grid-area: slice; object-position: 25% 75%;"
-                src="https://2muchblue.github.io/pics/SatisfyingSlice.gif">
-           
-            <img style="grid-area: boxFall;" src="https://2muchblue.github.io/pics/FallingBoxConveyor.gif">
-            <img style="grid-area: rose;" src="https://2muchblue.github.io/pics/Rose.png">
-            <img style="grid-area: sunset;" src="https://2muchblue.github.io/pics/SunSet.jpg">
-            <img style="grid-area: flrceil;" src="../pics/boxes/floorCeilBox.gif">
-            <img style="grid-area: chem;" src="../pics/boxes/chemBottle.gif">
-            <img style="grid-area: spaceB; image-rendering: pixelated;" src="../pics/boxes/spaceBox.png">
-            <img style="grid-area: wallHit;" src="../pics/boxes/wallHitBox.gif">
+            <img style="grid-area: niceRoom;" src="https://2muchblue.github.io/pics/a_Nice_Room.png"
+                alt="A dimmly lit room with a blue and red carpet, small bed, bookcase, and lamp."
+            >
+            
+            <img src="https://2muchblue.github.io/pics/Sky_Fire.png"
+                alt="A moth from Sky: Children of the light holding a flame." style="grid-area: skyFire;"
+            >
+
+            <img src="https://2muchblue.github.io/pics/WonderfulCuriosity.png"
+                alt="A girl in a red dress looking off with curiosity." style="grid-area: curiosity;"
+            >
+
+            <img src="https://2muchblue.github.io/pics/StandingLady.gif"
+                alt="An anthropromorphic woman with a nice fluffy hat and cartigan." style="grid-area: lady;"
+            >
+
+            <img style="grid-area: jumpBox;" src="https://2muchblue.github.io/pics/BoxFloorFling.gif"
+                alt="A Apreture Science Weighted Storage Cube falling into and out of an orange and blue portal."
+            >
+
+            <img src="https://2muchblue.github.io/pics/ForgottenRuins.jpg"
+                alt="A floating island with ruins from a time long past." style="grid-area: ruins;"
+            >
+
+            <img src="https://2muchblue.github.io/pics/SatisfyingSlice.gif"
+                alt="A blue cube is extruded from a wall while a knife, suspeded above, slices throught it." style="grid-area: slice; object-position: 25% 75%;"
+            >
+
+            <img style="grid-area: boxFall;" src="https://2muchblue.github.io/pics/FallingBoxConveyor.gif"
+                alt="A box is dispenced on to a conveyor belt. The box is then droped by the conveyor, shatering into a billion peices."
+            >
+            
+            <img style="grid-area: rose;"    src="https://2muchblue.github.io/pics/Rose.png"
+                alt="A colorful cel shaded rose."
+            >
+            
+            <img style="grid-area: sunset;"  src="https://2muchblue.github.io/pics/SunSet.jpg"
+                alt="A lineart forest scene with a nice gradiant behind it giving it a sunset feel."
+            >
+            
+            <img style="grid-area: flrceil;" src="../pics/boxes/floorCeilBox.gif"
+                alt="Two boxes fall in and out of some portals on the floor and ceiling."
+            >
+            
+            <img style="grid-area: chem;"    src="../pics/boxes/chemBottle.gif"
+                alt="A beaker with some chemicals fiz, bubble, and change color."
+            >
+            
+            <img style="grid-area: spaceB; image-rendering: pixelated;" src="../pics/boxes/spaceBox.png"
+                alt="A box with stars and planets around it's boarder."
+            >
+            
+            <img style="grid-area: wallHit;" src="../pics/boxes/wallHitBox.gif"
+                alt="A companion cube flings out of a portal on a wall, hits the opposite wall, then falls back into the portal on the floor to be flung again."
+            >
+
+            <img style="grid-area: illy;"    src="../pics/Illy.jpg"
+                alt="A lady named Illy stands with a white shirt and geometrically patterned skirt."
+            >
+            <img style="grid-area: flower;"  src="../pics/FloweredPages.png"
+                alt="Someone stands in an orange dress on a backgrond of notebook paper and flowers."
+            >
+            <img style="grid-area: foxTrot;" src="../pics/Fox_Trot_Final_Cropped_SmallResVersion.gif"
+                alt="A happy lil' Fox character walks through a forest."
+            >
+            <img style="grid-area: zFox;"    src="../pics/Serial_Designation_Z.png"
+                alt="One of my DND characters stands in a green void with a brown vest on, their fur and tail white and fluffy."
+            >
         </div>
 
         <hr style="border: 10px solid wavy;">
@@ -73,6 +119,8 @@
         </div>
     
     </div>
-    <div style="background-color: aquamarine; grid-area: foot;"><!--Nothin here yet. This is the bottom bar--></div>
+    <div class="footBar"><!--This is the bottom bar-->
+        <div style="margin-right: 20px;">Photo Gallery!</div>
+    </div>
 </body>
 </html>
