@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2MuchBlue's Epic Radio Of Epic</title>
+
+    <link rel="stylesheet" href="https://2muchblue.github.io/style.css">
+    <link rel="stylesheet" href="radioStyles.css">
+
+    <link rel="icon" href="../pics/icons/epicProjectsButton.gif">
+</head>
+<body class="widgetClass">
+    <h3 style="grid-area: ColorFM;">ColorFM</h3>
+
+    <input type="range" style="grid-area: volSlider;" id="volSlider" value="0" min="0" max="1" step="any" orient=vertical>
+
+    <div id="activeTrack" style="grid-area: activeTrack;">
+        <h4 id="activeTrackTitleElement" style="padding: 20px;"></h4>
+        <audio id="activeTrackAudioElement" >your browser doesn't support audio elements :(</audio>
+    </div>
+    <div id="trackHolder" style="overflow-y: auto; grid-area: tracks;">
+
+    </div>
+    <script src="radio-music-list.js"></script>
+    <script src="radio-script.js"></script>
+    <script>
+        updateElementTracks();
+        activeTrackTitleElement.innerText = "Click to Play Radio!";
+    </script>
+</body>
+</html>

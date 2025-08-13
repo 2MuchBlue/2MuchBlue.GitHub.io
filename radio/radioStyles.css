@@ -1,0 +1,37 @@
+.widgetClass{
+    display: grid;
+    grid-template-areas:
+    "ColorFM   ColorFM ColorFM"
+    "volSlider activeTrack  activeTrack "
+    "volSlider tracks  tracks ";
+    grid-template-columns: min-content 1fr 1fr;
+    grid-template-rows: min-content min-content 200px;
+ 
+    background-image: url('../pics/icons/epicBackground-01.png');
+    background-size: auto;
+    padding: 20px; 
+    color: var(--text);
+    border-radius: 20px;
+}
+
+input[type=range][orient=vertical] {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    appearance: slider-vertical;
+    width: 16px;
+    vertical-align: bottom;
+}
+
+.track{
+    content: attr(track-name);
+    
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+
+    background-color: #7003a390;
+}
+
+.track.selected{
+    background-color: #ff20e95e;
+}
