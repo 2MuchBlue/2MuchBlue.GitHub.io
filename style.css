@@ -242,7 +242,11 @@ hr{
     border-right: none;
 }
 
-
 a{
     color: #19b726;
+
+}
+
+* {
+    box-sizing: border-box;
 }
