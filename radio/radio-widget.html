@@ -6,12 +6,13 @@
     <title>2MuchBlue's Epic Radio Of Epic</title>
 
     <link rel="stylesheet" href="https://2muchblue.github.io/style.css">
-    <link rel="stylesheet" href="radioStyles.css">
+    <link rel="stylesheet" href="https://2muchblue.github.io/radio/radioStyles.css">
 
     <link rel="icon" href="../pics/icons/epicProjectsButton.gif">
 </head>
 <body class="widgetClass">
-    <h3 style="grid-area: ColorFM;">ColorFM</h3>
+    <h1 style="grid-area: ColorFM;" class="rainbow">ColorFM</h1>
+    <h3 style="grid-area: 2MuchBlue; text-align: right;">Made By <a href="https://2muchblue.github.io" target="_blank">2MuchBlue</a></h3>
 
     <input type="range" style="grid-area: volSlider;" id="volSlider" value="0" min="0" max="1" step="any" orient=vertical>
 
@@ -22,8 +23,8 @@
     <div id="trackHolder" style="overflow-y: auto; grid-area: tracks;">
 
     </div>
-    <script src="radio-music-list.js"></script>
-    <script src="radio-script.js"></script>
+    <script src="https://2muchblue.github.io/radio/radio-music-list.js"></script>
+    <script src="https://2muchblue.github.io/radio/radio-script.js"></script>
     <script>
         updateElementTracks();
         activeTrackTitleElement.innerText = "Click to Play Radio!";

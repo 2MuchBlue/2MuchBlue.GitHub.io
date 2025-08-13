@@ -1,7 +1,7 @@
 .widgetClass{
     display: grid;
     grid-template-areas:
-    "ColorFM   ColorFM ColorFM"
+    "ColorFM   ColorFM 2MuchBlue"
     "volSlider activeTrack  activeTrack "
     "volSlider tracks  tracks ";
     grid-template-columns: min-content 1fr 1fr;
@@ -34,4 +34,20 @@ input[type=range][orient=vertical] {
 
 .track.selected{
     background-color: #ff20e95e;
+}
+
+.rainbow{
+    animation-name: rainbowRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rainbowRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
