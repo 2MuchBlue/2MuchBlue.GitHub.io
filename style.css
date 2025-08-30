@@ -1,6 +1,6 @@
 
 :root{
-    --text : #ffcc14;
+    --text : #ffbc1f;
     --primary : #34145c64;
 }
 
@@ -250,3 +250,4 @@ a{
 * {
     box-sizing: border-box;
 }
+
