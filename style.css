@@ -123,7 +123,7 @@ img{
 .epicButton{
     margin: 30px;
     text-align: center;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
     scale: 1;
@@ -251,3 +251,16 @@ a{
     box-sizing: border-box;
 }
 
+
+
+a:not(nav a):hover::after{
+    content: "links to: " attr( href);
+    padding: 5px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+
+    font-size: 1rem;
+    background-color: #3b1361;
+    color: aliceblue;
+}

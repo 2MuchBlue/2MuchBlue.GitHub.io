@@ -1,22 +1,21 @@
 .galleryHolder{
     display: grid;
     grid-template-areas: 
-    "niceRoom   niceRoom  niceRoom jumpBox jumpBox"
-    "curiosity  curiosity lady     skyFire skyFire"
+    "banner     banner    banner   banner  banner "
+    "jumpBox    jumpBox   niceRoom niceRoom niceRoom"
+    "leaves     cCake     cCake    fCoffee fCoffee"
+    "cBar       cCake     cCake    fCoffee fCoffee"
+    "curiosity  curiosity skyFire  skyFire lady"
     "rose       slice     slice    slice   slice  "
     "boxFall    slice     slice    slice   slice  "
     "sunset     sunset    sunset   flrceil chem   "
     "sunset     sunset    sunset   spaceB  wallHit"
-    "illy       zFox      zFox     flower  flower "
+    "zFox       zFox      flower   flower  illy"
     "foxTrot    foxTrot   ruins    ruins   ruins  "
     ;
 
     /*grid-template-rows: repeat(8, min-content); */
     grid-template-columns: repeat(5, 1fr);
-}
-
-.sideBar{
-    /*filter: hue-rotate(30deg);*/
 }
 
 a{
@@ -53,4 +52,18 @@ img{
 
     grid-template-rows: 20vh 35vh min-content min-content;
     grid-template-columns: 1fr 1.4fr 0.6fr 1fr 0.6fr;
+}
+
+.scroll{
+    animation: moveBackground 10s linear 0s infinite forwards;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0vw;
+    }
+
+    100% {
+        background-position: 100vw;
+    }
 }
