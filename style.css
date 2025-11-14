@@ -28,6 +28,7 @@ body{
     height: 100vh;
 
     image-rendering: pixelated;
+    line-height: 1.2;
 }
 
 .vr{
@@ -263,4 +264,5 @@ a:not(nav a):hover::after{
     font-size: 1rem;
     background-color: #3b1361;
     color: aliceblue;
+
 }
