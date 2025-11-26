@@ -42,31 +42,63 @@
     aspect-ratio: 1;
 }
 
-.blerbLine{
-    gap: 10px;
-    display: grid;
-    grid-template-areas: "a b";
-    overflow: hidden;
-
-    height: 3in;
-
-    transition-property: grid-template-columns;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+.blerbLine .blurbText p{
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
-.blerbLine[fromRight]{
-    grid-template-columns: 5fr 1fr;
-}
-.blerbLine[fromLeft]{
-    grid-template-columns: 1fr 5fr;
+@media (min-width : 10in){ /* If greater than 10ins... */
+    .blerbLine{
+        gap: 10px;
+        display: grid;
+        grid-template-areas: "a b";
+        overflow: hidden;
+
+        height: 3in;
+
+        transition-property: grid-template-columns, overflow;
+        transition-delay: 0s, 0.25s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    .blerbLine[fromRight]{
+        grid-template-columns: 5fr 1fr;
+    }
+    .blerbLine[fromLeft]{
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .blerbLine *{
+        max-height: 3in;
+    }
+    
+    .blerbLine[fromRight]:hover{
+        grid-template-columns: 1fr 3fr;
+        /*overflow: auto;*/
+    }
+
+    .blerbLine[fromLeft]:hover{
+        grid-template-columns: 3fr 1fr;
+        /*overflow: auto;*/
+    }
 }
 
-.blerbLine *{
-    max-height: 3in;
-}
+@media (max-width : 10in){ /* If less than 10ins... */
+    .blerbLine{
+        gap: 0px;
+        display: grid;
+        grid-template-areas:
+        "a"
+        "b";
+    }
 
-.blerbLine[fromRight]:hover{
-    grid-template-columns: 1fr 3fr;
-    overflow: auto;
+    .blerbLine .blurbText{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 5px solid var(--text);
+        border-top: none;
+        grid-area: b;
+    }
 }

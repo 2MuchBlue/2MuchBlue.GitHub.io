@@ -2,6 +2,7 @@
 :root{
     --text : #ffbc1f;
     --primary : #34145c64;
+    --displaySwitchWidth : 10in;
 }
 
 @font-face {
@@ -56,56 +57,6 @@ body{
     border: none;
 
     height: 100%;
-}
-
-@media (min-width : 10in) { /* If larger than 10 in... */
-    body{
-        grid-template-areas:
-        "side headLeftEdge head head head head head headRightEdge"
-        "side . . main main main . ."
-        "side . . main main main . ."
-        "side . . main main main . ."
-        "side footLeftEdge foot foot foot foot foot footRightEdge";
-        
-        grid-template-rows: 50px 1fr 1fr 1fr 50px;
-        grid-template-columns: 150px 50px 50px repeat(3, 1fr) 50px 50px;
-    }
-}
-
-@media (max-width : 10in){ /* If less than 10ins... */
-    body{
-        grid-template-areas:
-        "side"
-        "head"
-        "main"
-        "main"
-        "main"
-        "foot";
-        
-        grid-template-rows: 75px 50px 1fr 1fr 1fr 50px;
-        grid-template-columns: 1fr;
-    }
-
-    .sideBar{
-        overflow-y: hidden;
-        overflow-x: scroll;
-
-        display: flex;
-        flex-direction:row;
-        justify-content: space-between;
-    }
-
-    .hideIf2small{
-        display: none;
-    }
-
-    .sideBar .epicButton img{
-        display: none;
-    }
-
-    .sideBar .epicButton {
-        scale: 0.5;
-    }
 }
 
 .footBar{
@@ -265,4 +216,58 @@ a:not(nav a):hover::after{
     background-color: #3b1361;
     color: aliceblue;
 
+}
+
+@media (min-width : 10in) { /* If larger than 10 in... */
+    body{
+        grid-template-areas:
+        "side headLeftEdge head head head head head headRightEdge"
+        "side . . main main main . ."
+        "side . . main main main . ."
+        "side . . main main main . ."
+        "side footLeftEdge foot foot foot foot foot footRightEdge";
+        
+        grid-template-rows: 50px 1fr 1fr 1fr 50px;
+        grid-template-columns: 150px 50px 50px repeat(3, 1fr) 50px 50px;
+    }
+}
+
+@media (max-width : 10in){ /* If less than 10ins... */
+    body{
+        grid-template-areas:
+        "side"
+        "head"
+        "main"
+        "main"
+        "main"
+        "foot";
+        
+        grid-template-rows: 75px 50px 1fr 1fr 1fr 0px;
+        grid-template-columns: 1fr;
+    }
+
+    .sideBar{
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    .hideIf2small{
+        display: none;
+    }
+
+    .sideBar .epicButton img{
+        display: none;
+    }
+
+    .sideBar .epicButton {
+        scale: 0.5;
+    }
+
+    .footBar{
+        display: none;
+    }
 }
