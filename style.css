@@ -152,9 +152,9 @@ hr{
     margin-bottom: 0px;
 }
 
-.denotedNestedDiv:not([long]):has(*){
-    margin-top: 32px;
-    margin-bottom: 32px;
+.denotedNestedDiv:not([long]):has(*){ /*If a denotedNestedDiv class has no [long] and has any children, the denotedNestedDiv element will have this margin */
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .imageGallery.small {
@@ -270,4 +270,12 @@ a:not(nav a):hover::after{
     .footBar{
         display: none;
     }
+}
+
+.mainContent {
+    grid-area: main; 
+    overflow-y: scroll; 
+    background-image: url('pics/icons/epicBackground-01.png'); 
+    padding: 20px; 
+    color: var(--text);
 }

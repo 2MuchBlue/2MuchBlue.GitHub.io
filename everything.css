@@ -39,7 +39,8 @@
     "a b"
     "c d";
 
-    aspect-ratio: 1;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .blerbLine .blurbText p{
