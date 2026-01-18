@@ -91,6 +91,7 @@ img{
     transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
 }
 
+
 .epicButton:hover{
     /*animation-name: spinny;
     animation-timing-function: cubic-bezier(.68,-0.55,.27,1.55) ;
@@ -228,7 +229,12 @@ a:not(nav a):hover::after{
         "side footLeftEdge foot foot foot foot foot footRightEdge";
         
         grid-template-rows: 50px 1fr 1fr 1fr 50px;
-        grid-template-columns: 150px 50px 50px repeat(3, 1fr) 50px 50px;
+        grid-template-columns: 150px 0px 50px repeat(3, 1fr) 50px 0px;
+    }
+
+    
+    .showIf2big {
+        display: none;
     }
 }
 
@@ -242,7 +248,7 @@ a:not(nav a):hover::after{
         "main"
         "foot";
         
-        grid-template-rows: 75px 50px 1fr 1fr 1fr 0px;
+        grid-template-rows: 4rem 2.2rem 1fr 1fr 1fr 0px;
         grid-template-columns: 1fr;
     }
 
@@ -269,6 +275,17 @@ a:not(nav a):hover::after{
 
     .footBar{
         display: none;
+    }
+
+    
+    .epicSkipLink {
+        align-self: center;
+    }
+
+    .epicSkipLinkSepperator{
+        height: 2rem; 
+        margin-left: 10px; 
+        margin-right: 10px;
     }
 }
 
