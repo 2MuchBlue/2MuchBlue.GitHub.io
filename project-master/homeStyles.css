@@ -45,20 +45,13 @@ img{
 }
 
 .projectDirHolder{
-    display: grid;
-    grid-template-areas:
-    "js minecraft github";
-    grid-template-rows: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap : 10px;
 }
 
-@media(max-width:7.5in){
-    .projectDirHolder{
-        grid-template-areas:
-        "js"
-        "minecraft"
-        "github";
-        grid-template-rows: 100% 100% 100%;
-        grid-template-columns: 100%;
-    }
+.projectDirHolder div {
+    /*width: 200px;*/
+    flex: 1;
 }

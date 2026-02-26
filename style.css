@@ -2,6 +2,7 @@
 :root{
     --text : #ffbc1f;
     --primary : #34145c64;
+    --displaySwitchWidth : 10in;
 }
 
 @font-face {
@@ -58,56 +59,6 @@ body{
     height: 100%;
 }
 
-@media (min-width : 10in) { /* If larger than 10 in... */
-    body{
-        grid-template-areas:
-        "side headLeftEdge head head head head head headRightEdge"
-        "side . . main main main . ."
-        "side . . main main main . ."
-        "side . . main main main . ."
-        "side footLeftEdge foot foot foot foot foot footRightEdge";
-        
-        grid-template-rows: 50px 1fr 1fr 1fr 50px;
-        grid-template-columns: 150px 50px 50px repeat(3, 1fr) 50px 50px;
-    }
-}
-
-@media (max-width : 10in){ /* If less than 10ins... */
-    body{
-        grid-template-areas:
-        "side"
-        "head"
-        "main"
-        "main"
-        "main"
-        "foot";
-        
-        grid-template-rows: 75px 50px 1fr 1fr 1fr 50px;
-        grid-template-columns: 1fr;
-    }
-
-    .sideBar{
-        overflow-y: hidden;
-        overflow-x: scroll;
-
-        display: flex;
-        flex-direction:row;
-        justify-content: space-between;
-    }
-
-    .hideIf2small{
-        display: none;
-    }
-
-    .sideBar .epicButton img{
-        display: none;
-    }
-
-    .sideBar .epicButton {
-        scale: 0.5;
-    }
-}
-
 .footBar{
     display: flex;
     flex-direction: row-reverse;
@@ -139,6 +90,7 @@ img{
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);
 }
+
 
 .epicButton:hover{
     /*animation-name: spinny;
@@ -201,9 +153,9 @@ hr{
     margin-bottom: 0px;
 }
 
-.denotedNestedDiv:not([long]):has(*){
-    margin-top: 32px;
-    margin-bottom: 32px;
+.denotedNestedDiv:not([long]):has(*){ /*If a denotedNestedDiv class has no [long] and has any children, the denotedNestedDiv element will have this margin */
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .imageGallery.small {
@@ -265,4 +217,88 @@ a:not(nav a):hover::after{
     background-color: #3b1361;
     color: aliceblue;
 
+}
+
+@media (min-width : 10in) { /* If larger than 10 in... */
+    body{
+        grid-template-areas:
+        "side headLeftEdge head head head head head headRightEdge"
+        "side . . main main main . ."
+        "side . . main main main . ."
+        "side . . main main main . ."
+        "side footLeftEdge foot foot foot foot foot footRightEdge";
+        
+        grid-template-rows: 50px 1fr 1fr 1fr 50px;
+        grid-template-columns: 150px 0px 50px repeat(3, 1fr) 50px 0px;
+    }
+
+    
+    .showIf2big {
+        display: none;
+    }
+}
+
+@media (max-width : 10in){ /* If less than 10ins... */
+    body{
+        grid-template-areas:
+        "side"
+        "head"
+        "main"
+        "main"
+        "main"
+        "foot";
+        
+        grid-template-rows: 4rem 2.2rem 1fr 1fr 1fr 0px;
+        grid-template-columns: 1fr;
+    }
+
+    .sideBar{
+        overflow-y: hidden;
+        overflow-x: scroll;
+
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    .hideIf2small{
+        display: none;
+    }
+
+    .sideBar .epicButton img{
+        display: none;
+    }
+
+    .sideBar .epicButton {
+        scale: 0.5;
+    }
+
+    .footBar{
+        display: none;
+    }
+
+    
+    .epicSkipLink {
+        align-self: center;
+    }
+
+    .epicSkipLinkSepperator{
+        height: 2rem; 
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+}
+
+.mainContent {
+    grid-area: main; 
+    overflow-y: scroll; 
+    background-image: url('pics/icons/epicBackground-01.png'); 
+    padding: 20px; 
+    color: var(--text);
+}
+
+.flexListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap : 10px;
 }

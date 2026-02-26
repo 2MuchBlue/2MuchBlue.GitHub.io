@@ -50,6 +50,25 @@ img{
     grid-template-columns: 1fr 1fr 0.5fr;
 }
 
+@media (max-width: 10in) {
+    .siteMapGrid{
+        display: grid;
+        grid-template-areas:
+        "why"
+        "line"
+        "discl"
+        "line2"
+        "links";
+
+        /*grid-template-rows: min-content min-content min-content;*/
+        grid-template-columns: 1fr;
+    }
+
+    .showWhenBig{
+        display: none;
+    }
+}
+
 .marqee[direction="left2right"]{
     animation: 3s linear 0s infinite forwards both running left2rightMarqee;
 }

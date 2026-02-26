@@ -1,0 +1,105 @@
+
+.marqee{
+    /*animation: marqeeAnim 20s linear 10s infinite forwards forwards;*/
+    animation-name: marqeeAnim;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.marqee[side="a"]{
+    animation-delay: 0s;
+}
+.marqee[side="b"]{
+    animation-delay: 10s;
+}
+
+@keyframes marqeeAnim {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+
+.flexLine {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+.flexLine img{
+    height: 3in;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tile2x2 {
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c d";
+
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blerbLine .blurbText p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+@media (min-width : 10in){ /* If greater than 10ins... */
+    .blerbLine{
+        gap: 10px;
+        display: grid;
+        grid-template-areas: "a b";
+        overflow: hidden;
+
+        height: 3in;
+
+        transition-property: grid-template-columns, overflow;
+        transition-delay: 0s, 0.25s;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    .blerbLine[fromRight]{
+        grid-template-columns: 5fr 1fr;
+    }
+    .blerbLine[fromLeft]{
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .blerbLine *{
+        max-height: 3in;
+    }
+    
+    .blerbLine[fromRight]:hover{
+        grid-template-columns: 1fr 3fr;
+        /*overflow: auto;*/
+    }
+
+    .blerbLine[fromLeft]:hover{
+        grid-template-columns: 3fr 1fr;
+        /*overflow: auto;*/
+    }
+}
+
+@media (max-width : 10in){ /* If less than 10ins... */
+    .blerbLine{
+        gap: 0px;
+        display: grid;
+        grid-template-areas:
+        "a"
+        "b";
+    }
+
+    .blerbLine .blurbText{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 5px solid var(--text);
+        border-top: none;
+        grid-area: b;
+    }
+}
