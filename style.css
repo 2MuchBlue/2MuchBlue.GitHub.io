@@ -296,3 +296,9 @@ a:not(nav a):hover::after{
     padding: 20px; 
     color: var(--text);
 }
+
+.flexListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap : 10px;
+}
