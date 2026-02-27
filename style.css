@@ -216,7 +216,13 @@ a:not(nav a):hover::after{
     font-size: 1rem;
     background-color: #3b1361;
     color: aliceblue;
+}
+a:not(nav a)[target]:hover::after{
+    content: "links to: " attr( href) " in a new tab";
+}
 
+a:not(nav a)[download]:hover::after{
+    content: "downloads file: " attr( href);
 }
 
 @media (min-width : 10in) { /* If larger than 10 in... */
