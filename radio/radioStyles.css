@@ -7,7 +7,7 @@
     grid-template-columns: min-content 1fr 1fr;
     grid-template-rows: min-content min-content 200px;
  
-    background-image: url('../pics/icons/epicBackground-01.png');
+    background-image: url('/pics/icons/epicBackground-01.png');
     background-size: auto;
     padding: 20px; 
     color: var(--text);
