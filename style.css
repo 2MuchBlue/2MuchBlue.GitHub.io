@@ -3,6 +3,7 @@
     --text : #ffbc1f;
     --primary : #34145c64;
     --displaySwitchWidth : 10in;
+    --secondary: #0e1658;
 }
 
 @font-face {
@@ -59,13 +60,23 @@ body{
     height: 100%;
 }
 
+.headBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    grid-area: head;
+    background-color: var(--secondary);
+}
+
 .footBar{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-content: center;
     grid-area: foot;
-    background-color: aquamarine;
+    background-color: var(--secondary);
+    color: var(--text);
 }
     
 img{
@@ -204,8 +215,6 @@ a{
     box-sizing: border-box;
 }
 
-
-
 a:not(nav a):hover::after{
     content: "links to: " attr( href);
     padding: 5px;
@@ -216,7 +225,30 @@ a:not(nav a):hover::after{
     font-size: 1rem;
     background-color: #3b1361;
     color: aliceblue;
+}
 
+a[target]:not(nav a):hover::after{
+    content: "links to: " attr( href) " in a new tab";
+    padding: 5px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+
+    font-size: 1rem;
+    background-color: #3b1361;
+    color: aliceblue;
+}
+
+a[download]:not(nav a):hover::after{
+    content: "downloads " attr(href) " as " attr(download);
+    padding: 5px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+
+    font-size: 1rem;
+    background-color: #3b1361;
+    color: aliceblue;
 }
 
 @media (min-width : 10in) { /* If larger than 10 in... */
