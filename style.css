@@ -3,6 +3,7 @@
     --text : #ffbc1f;
     --primary : #34145c64;
     --displaySwitchWidth : 10in;
+    --secondary: #0e1658;
 }
 
 @font-face {
@@ -59,13 +60,23 @@ body{
     height: 100%;
 }
 
+.headBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    grid-area: head;
+    background-color: var(--secondary);
+}
+
 .footBar{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-content: center;
     grid-area: foot;
-    background-color: aquamarine;
+    background-color: var(--secondary);
+    color: var(--text);
 }
     
 img{
