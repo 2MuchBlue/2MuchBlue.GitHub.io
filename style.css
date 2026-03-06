@@ -215,8 +215,6 @@ a{
     box-sizing: border-box;
 }
 
-
-
 a:not(nav a):hover::after{
     content: "links to: " attr( href);
     padding: 5px;
@@ -227,7 +225,30 @@ a:not(nav a):hover::after{
     font-size: 1rem;
     background-color: #3b1361;
     color: aliceblue;
+}
 
+a[target]:not(nav a):hover::after{
+    content: "links to: " attr( href) " in a new tab...";
+    padding: 5px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+
+    font-size: 1rem;
+    background-color: #3b1361;
+    color: aliceblue;
+}
+
+a[download]:not(nav a):hover::after{
+    content: "downloads " attr(href) " as " attr(download);
+    padding: 5px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+
+    font-size: 1rem;
+    background-color: #3b1361;
+    color: aliceblue;
 }
 
 @media (min-width : 10in) { /* If larger than 10 in... */
