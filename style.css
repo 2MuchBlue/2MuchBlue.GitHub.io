@@ -228,7 +228,7 @@ a:not(nav a):hover::after{
 }
 
 a[target]:not(nav a):hover::after{
-    content: "links to: " attr( href) " in a new tab...";
+    content: "links to: " attr( href) " in a new tab";
     padding: 5px;
     position: fixed;
     right: 0px;
