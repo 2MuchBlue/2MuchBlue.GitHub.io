@@ -4,7 +4,6 @@
 
 const emailEncoder = new TextEncoder();
 const emailDecoder = new TextDecoder();
-emailEncoder.encode("apple")
 //console.log(emailEncoder.encode("apple@core.com").toString()); // example of encoding block
 // run it and copy the output from the console and put it in a new Uint8array
 
