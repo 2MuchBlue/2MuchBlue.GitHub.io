@@ -1,6 +1,8 @@
 
 // put "email" in the class list, and add the "emailKey" attr with the target key to use the right email
 // ex: <a href="" class="email" emailKey="main">apple</a>
+// <a> tags' content will NOT be changed
+// The content of any other tag with the class of "email" and an "emailKey" WILL be REPLACED
 
 const emailEncoder = new TextEncoder();
 const emailDecoder = new TextDecoder();

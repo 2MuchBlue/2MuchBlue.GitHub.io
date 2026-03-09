@@ -33,7 +33,7 @@ These instructions are just guidelines! Take nothing as absolute! This is my fis
 7) Wrap the cape around Hornet and with the little peice of seam allowance on the edges, sew it up! ( I tack it down, then come back with the machine and a straight stitch. )
 
 8) Celebrate! You have finished! Take pictures! Annoy your friends! Have fun!
-I would love to see your hornet! Email me at random.artist.dooder@gmail.com! I'd love to see 'em!
+I would love to see your hornet! (You can find my email on my website: (2MuchBlue.github.io)[https://2MuchBlue.github.io])
 
 ---
 ## Resources
