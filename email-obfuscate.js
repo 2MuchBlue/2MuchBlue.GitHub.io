@@ -10,7 +10,8 @@ const emailDecoder = new TextDecoder();
 // run it and copy the output from the console and put it in a new Uint8array
 
 const emails = {
-    "main": emailDecoder.decode(new Uint8Array([82,97,110,100,111,109,46,65,114,116,105,115,116,46,68,111,111,100,101,114,64,103,109,97,105,108,46,99,111,109]))
+    "main": emailDecoder.decode(new Uint8Array([82,97,110,100,111,109,46,65,114,116,105,115,116,46,68,111,111,100,101,114,64,103,109,97,105,108,46,99,111,109])),
+    "mainDisplay": emailDecoder.decode(new Uint8Array([82,97,110,100,111,109,46,38,115,104,121,59,65,114,116,105,115,116,46,38,115,104,121,59,68,111,111,100,101,114,64,38,115,104,121,59,103,109,97,105,108,46,99,111,109]))
 };
 
 let emailElements = document.getElementsByClassName("email");
@@ -25,6 +26,6 @@ for(let i = 0; i < emailElements.length; i++ ){
     if(emailElements[i].tagName.toLowerCase() === "a"){
         emailElements[i].href = `mailto:${emails[wantedEmailKey]}`;
     }else{
-        emailElements[i].innerText = emails[wantedEmailKey];
+        emailElements[i].innerHTML = emails[wantedEmailKey];
     }
 }
