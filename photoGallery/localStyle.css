@@ -67,3 +67,7 @@ img{
         background-position: 100vw;
     }
 }
+
+img[alt=""]{
+    filter: brightness(50%);
+}

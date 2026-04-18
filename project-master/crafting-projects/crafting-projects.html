@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="crafting-projects-style.css">
 
-    <link rel="icon" href="../pics/icons/epicProjectsButton.gif">
+    <link rel="icon" href="/pics/icons/StaticIcons/epicProjectsButton.png" type="image/png">
+    <link rel="icon" href="/pics/icons/epicProjectsButton.gif" type="image/gif">
 </head>
 <body>
     <nav class="sideBar" style="text-align: center;">
@@ -21,7 +22,7 @@
 
         <div style="color: var(--text); text-align: center; margin-top: 10px; padding: 10px;">Nav&#x2011;o&#x2011;matic</div>
         <a href="https://2muchblue.github.io/" class="epicButton"><img src="/pics/icons/epicHomeButton.gif" width="150px" height="150px"><span>Home</span></a>
-        <a href="mailto:random.artist.dooder@gmail.com" class="epicButton" ><img src="/pics/icons/epicMailButton.gif" width="150px" height="150px"><span>Get In Touch!!</span></a>
+        <a href="" class="epicButton email" emailKey="main" ><img src="/pics/icons/epicMailButton.gif" width="150px" height="150px"><span>Get In Touch!!</span></a>
         <a href="/about-page/about" class="epicButton"><img src="/pics/icons/epicLinkButton.gif" width="150px" height="150px"><span>About Me!</span></a>
         <a href="/project-master/projects-main" class="epicButton"><img src="/pics/icons/epicProjectsButton.gif" width="150px" height="150px"><span>Projects</span></a>
         <a href="/photoGallery/photoGallery" class="epicButton"><img src="/pics/icons/epicFlower.gif" width="150px" height="150px"><span>Photo Gallery</span></a>
@@ -41,7 +42,7 @@
                 I've been making cosplays, outfits, props, plushes and all sorts of things! 
                 Some of them even have their related patterns! 
                 Remember, I am totally fine if you want to use the patterns (credit would be nice!) 
-                I am always <a class="breakable" target="_mail" href="mailto:random.artist.dooder@gmail.com">available if you have questions at Random&shy;.Artist&shy;.Dooder@gmail&shy;.com!</a>
+                I am always <a target="_mail" href="" class="email breakable" emailKey="main">available if you have questions at <span class="email" emailKey="mainDisplay">(sorry, the JS didn't work :(</span>!</a>
             </p>
         </div>
 
@@ -154,5 +155,6 @@
     <div class="footBar"><!--This is the bottom bar-->
         <div style="margin-right: 20px;">Crafting Projects</div>
     </div>
+    <script src="/email-obfuscate.js"></script>
 </body>
 </html>
