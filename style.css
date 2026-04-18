@@ -67,6 +67,8 @@ body{
     align-content: center;
     grid-area: head;
     background-color: var(--secondary);
+    overflow-x: scroll;
+    hyphens: none;
 }
 
 .footBar{
@@ -333,4 +335,9 @@ a[download]:not(nav a):hover::after{
     display: flex;
     flex-wrap: wrap;
     gap : 10px;
+}
+
+.email{
+    hyphenate-character: "";
+    hyphens:manual;
 }

@@ -15,7 +15,7 @@
     <nav class="sideBar">
         <div style="color: var(--text); text-align: center; margin-top: 10px; padding: 10px;">Nav&#x2011;o&#x2011;matic</div>
         <a href="https://2muchblue.github.io/" class="epicButton"><img src="/pics/icons/epicHomeButton.gif" width="150px" height="150px"><span>Home</span></a>
-        <a href="mailto:random.artist.dooder@gmail.com" class="epicButton" ><img src="/pics/icons/epicMailButton.gif" width="150px" height="150px"><span>Get In Touch!!</span></a>
+        <a href="" class="epicButton email" emailKey="main" ><img src="/pics/icons/epicMailButton.gif" width="150px" height="150px"><span>Get In Touch!!</span></a>
         <a href="/about-page/about" class="epicButton"><img src="/pics/icons/epicLinkButton.gif" width="150px" height="150px"><span>About Me!</span></a>
         <a href="/project-master/projects-main" class="epicButton"><img src="/pics/icons/epicProjectsButton.gif" width="150px" height="150px"><span>Projects</span></a>
         <a href="/photoGallery/photoGallery" class="epicButton"><img src="/pics/icons/epicFlower.gif" width="150px" height="150px"><span>Photo Gallery</span></a>
@@ -29,7 +29,7 @@
         <h1>Welcome to the Projects of 2MuchBlue!</h1>
         <p style="margin-top: 0px; margin-bottom: 0px;">
             Welcome! This is like a pseudo-portfolio of many of my many projects! I have been working on my hobbies and interests for a very long time and here,
-            I hope to display some of them and give a little insight into each one. If you have any inquiries, <a target="_mail" href="mailto:random.artist.dooder@gmail.com">You can always reach me at Random.Artist.Dooder@gmail.com!</a>
+            I hope to display some of them and give a little insight into each one. If you have any inquiries, <a target="_mail" href="" class="email" emailKey="main">You can always reach me at <span class="email" emailKey="mainDisplay">(sorry, the JS didn't work :(</span>!</a>
             You can <a href="https://2muchblue.github.io/about-page/about">learn more about me over here!</a>
         </p>
 
@@ -404,5 +404,6 @@
     <div class="footBar"><!--This is the bottom bar-->
         <div style="margin-right: 20px;">Project Main Page</div>
     </div>
+    <script src="/email-obfuscate.js"></script>
 </body>
 </html>
