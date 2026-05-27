@@ -22,11 +22,37 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.animationListHolder{
-    display: grid;
-    grid-template-areas: 
-    " left right ";
+@media (max-width : 6in){ /* If less than 10ins... */
+    .hide4mobile{
+        display: none;
+    }
+    .intrests{
+        grid-template-areas: 
+        " interests "
+        " hobbies "
+        " games "
+        " gline "
+        " shows  "
+        " hline "
+        " animation "
+        " aline"
+        "books "
+        "sites"
+        "bline "
+        "movies "
+        "rline "
+        "rand "
+        "mline "
+        "music ";
 
-    grid-template-rows: 100%;
-    grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(15, min-content);
+        grid-template-columns: 1fr;
+    }
+}
+
+.animationListHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }

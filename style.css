@@ -253,6 +253,10 @@ a[download]:not(nav a):hover::after{
     color: aliceblue;
 }
 
+.mobileBumper{
+    display: none;
+}
+
 @media (min-width : 10in) { /* If larger than 10 in... */
     body{
         grid-template-areas:
@@ -310,7 +314,6 @@ a[download]:not(nav a):hover::after{
     .footBar{
         display: none;
     }
-
     
     .epicSkipLink {
         align-self: center;
@@ -320,6 +323,11 @@ a[download]:not(nav a):hover::after{
         height: 2rem; 
         margin-left: 10px; 
         margin-right: 10px;
+    }
+
+    .mobileBumper{
+        display: block;
+        height: 150px;
     }
 }
 
