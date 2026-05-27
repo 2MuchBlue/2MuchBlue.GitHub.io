@@ -2,19 +2,28 @@
     display: grid;
     grid-template-areas: 
     "banner     banner    banner   banner  banner "
+    "banner     banner    banner   banner  banner "
     "jumpBox    jumpBox   niceRoom niceRoom niceRoom"
-    "leaves     cCake     cCake    fCoffee fCoffee"
-    "cBar       cCake     cCake    fCoffee fCoffee"
-    "curiosity  curiosity skyFire  skyFire lady"
-    "rose       slice     slice    slice   slice  "
-    "boxFall    slice     slice    slice   slice  "
+    "jumpBox    jumpBox   niceRoom niceRoom niceRoom"
+    "leaves     cCake     cCake    lTime    lTime"
+    "cBar       cCake     cCake    lTime    lTime"
+    "boots      boots     coat     lTime    lTime"
+    "boots      boots     birdly   birdly   fCoffee"
+    "kudle      kudle     birdly   birdly   matisa"
+
+    "lady curiosity  curiosity skyFire  skyFire"
+    "lady curiosity  curiosity skyFire  skyFire"
+    "slice     slice    slice   slice  rose"
+    "slice     slice    slice   slice  boxFall"
     "sunset     sunset    sunset   flrceil chem   "
     "sunset     sunset    sunset   spaceB  wallHit"
     "zFox       zFox      flower   flower  illy"
+    "zFox       zFox      flower   flower  illy"
+    "foxTrot    foxTrot   ruins    ruins   ruins  "
     "foxTrot    foxTrot   ruins    ruins   ruins  "
     ;
 
-    /*grid-template-rows: repeat(8, min-content); */
+    grid-template-rows: repeat(19, 15vw);
     grid-template-columns: repeat(5, 1fr);
 }
 
@@ -33,8 +42,6 @@ a{
     image-rendering: auto;
     width: 100%;
     height: 100%;
-
-    max-height: 400px;
 }
 
 img{
@@ -67,7 +74,15 @@ img{
         background-position: 100vw;
     }
 }
-
+/*
 img[alt=""]{
-    filter: brightness(50%);
+    filter: brightness(50%) sepia(50%);
+}
+
+img:not([alt]){
+    filter: brightness(50%) sepia(50%);
+}
+*/
+.pixelated {
+    image-rendering: pixelated;
 }
